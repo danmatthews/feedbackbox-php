@@ -1,0 +1,19 @@
+{
+    "name": "simplysatisfied/simply-php",
+    "description": "The official PHP API wrapper for the Simply Satisfied API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Matthews",
+            "email": "dan@danmatthews.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Simply\\": ""
+        }
+    },
+    "require": {
+		"guzzlehttp/guzzle": "~4.2.3"
+    }
+}
