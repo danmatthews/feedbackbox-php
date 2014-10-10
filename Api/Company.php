@@ -14,4 +14,8 @@ class Company extends BaseRequest {
 		return $this;
 	}
 
+	public function metadata() {
+		return new \Simply\Api\Metadata\Company($this->getApiKey());
+	}
+
 }

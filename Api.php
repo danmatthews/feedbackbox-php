@@ -6,7 +6,9 @@ class Api {
 		$this->apiKey = $apiKey;
 	}
 
-	public function invites() {}
+	public function invites() {
+		return new \Simply\Api\Invite($this->apiKey);
+	}
 	public function responses() {}
 	public function users() {
 		return new \Simply\Api\Users($this->apiKey);
@@ -14,5 +16,4 @@ class Api {
 	public function company() {
 		return new \Simply\Api\Company($this->apiKey);
 	}
-	public function metadata() {}
 }
