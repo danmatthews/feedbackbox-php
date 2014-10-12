@@ -2,6 +2,12 @@
 
 class Company extends BaseRequest {
 
+	public function __construct($apiKey) {
+		parent::__construct($apiKey);
+		$this->setEndpoint('invite');
+		$this->setMethod(parent::METHOD_GET);
+	}
+
 	public function all() {
 		$this->setEndpoint('company');
 		$this->setMethod(parent::METHOD_GET);
