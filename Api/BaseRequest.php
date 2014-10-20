@@ -19,7 +19,7 @@ class BaseRequest
      * The fully qualified URL of the API.
      * @var string
      */
-    protected $url = 'http://simply.local/api/v1/';
+    protected $url = 'http://beta.simplysatisfied.net/api/v1/';
 
     /**
      * The user's API key.
