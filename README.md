@@ -7,7 +7,7 @@ Install with [Composer](http://getcomposer.org).
 ```json
 {
 	"require": {
-		"simply/simply-php":"dev-master"
+		"simplysatisfied/simply-php":"dev-master"
 	}
 }
 ```
