@@ -1,6 +1,6 @@
 {
-    "name": "simplysatisfied/simply-php",
-    "description": "The official PHP API wrapper for the Simply Satisfied API",
+    "name": "feedbackbox/feedbackbox-php",
+    "description": "The official PHP API wrapper for the FeedbackBox API",
     "license": "MIT",
     "authors": [
         {
@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Simply\\": ""
+            "FeedbackBox\\": ""
         }
     },
     "require": {

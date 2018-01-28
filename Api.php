@@ -1,4 +1,4 @@
-<?php namespace Simply;
+<?php namespace FeedbackBox;
 
 class Api
 {
@@ -23,37 +23,37 @@ class Api
 
     /**
      * Get an instance of the invite class.
-     * @return Simply\Api\Invite
+     * @return FeedbackBox\Api\Invite
      */
     public function invites()
     {
-        return new \Simply\Api\Invite($this->apiKey);
+        return new \FeedbackBox\Api\Invite($this->apiKey);
     }
     /**
      * Get an instance of the response class.
-     * @return Simply\Api\Response
+     * @return FeedbackBox\Api\Response
      */
     public function responses()
     {
-        return new \Simply\Api\Response($this->apiKey);
+        return new \FeedbackBox\Api\Response($this->apiKey);
     }
 
     /**
      * Get an instance of the user class.
-     * @return Simply\Api\User
+     * @return FeedbackBox\Api\User
      */
     public function users()
     {
-        return new \Simply\Api\Users($this->apiKey);
+        return new \FeedbackBox\Api\Users($this->apiKey);
     }
 
     /**
      * Get an instance of the company class.
-     * @return Simply\Api\Company
+     * @return FeedbackBox\Api\Company
      */
     public function company()
     {
-        return new \Simply\Api\Company($this->apiKey);
+        return new \FeedbackBox\Api\Company($this->apiKey);
     }
 }
 

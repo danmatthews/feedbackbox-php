@@ -1,4 +1,4 @@
-<?php namespace Simply\Api;
+<?php namespace FeedbackBox\Api;
 
 class Company extends BaseRequest
 {
@@ -26,7 +26,7 @@ class Company extends BaseRequest
 
     public function metadata()
     {
-        return new \Simply\Api\Metadata\Company($this->getApiKey());
+        return new \FeedbackBox\Api\Metadata\Company($this->getApiKey());
     }
 }
 

@@ -1,4 +1,4 @@
-# Simply Satisfied PHP API Wrapper
+# FeedbackBox PHP API Wrapper
 This library is a work in progress, pull requests are accepted with thanks.
 
 ## Install
@@ -7,7 +7,7 @@ Install with [Composer](http://getcomposer.org).
 ```json
 {
 	"require": {
-		"simplysatisfied/simply-php":"dev-master"
+		"feedbackbox/feedbackbox-php":"dev-master"
 	}
 }
 ```
@@ -25,7 +25,7 @@ Install with [Composer](http://getcomposer.org).
 <?php
 
 // Initialise with your API key.
-$api = new Simply\Api('api-key-here');
+$api = new FeedbackBox\Api('api-key-here');
 
 // Get all invites
 $invites = $api->invites->makeRequest();

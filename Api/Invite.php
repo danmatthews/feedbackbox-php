@@ -1,4 +1,4 @@
-<?php namespace Simply\Api;
+<?php namespace FeedbackBox\Api;
 
 class Invite extends BaseRequest
 {

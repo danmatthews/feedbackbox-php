@@ -1,6 +1,6 @@
-<?php namespace Simply\Api\Metadata;
+<?php namespace FeedbackBox\Api\Metadata;
 
-class Company extends \Simply\Api\BaseRequest
+class Company extends \FeedbackBox\Api\BaseRequest
 {
     public function sectors()
     {

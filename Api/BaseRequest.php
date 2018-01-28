@@ -1,4 +1,4 @@
-<?php namespace Simply\Api;
+<?php namespace FeedbackBox\Api;
 
 use GuzzleHttp\Client;
 
@@ -19,7 +19,7 @@ class BaseRequest
      * The fully qualified URL of the API.
      * @var string
      */
-    protected $url = 'https://app.simplysatisfied.net/api/v1/';
+    protected $url = 'https://app.feedbackbox.co.uk/api/v1/';
 
     /**
      * The user's API key.
@@ -96,7 +96,7 @@ class BaseRequest
         $url = $this->url . $this->endpoint;
         $client = new Client();
         $rdata = array(
-            'headers' => array('X-Simply-Auth' => $this->apiKey),
+            'headers' => array('X-FeedbackBox-Auth' => $this->apiKey),
         );
         if (!empty($this->queryParams)) {
             $rdata['query'] = $this->queryParams;
