@@ -107,7 +107,8 @@ class BaseRequest
             $rdata['query']['include'] = implode(',', $this->includes);
         }
         if (!empty($this->body)) {
-            $rdata['body'] = $this->body;
+            $rdata['headers']['Content-Type'] = 'application/json';
+            $rdata['body'] = json_encode($this->body);
         }
         $response = $client->request($this->method, $this->endpoint, $rdata);
         

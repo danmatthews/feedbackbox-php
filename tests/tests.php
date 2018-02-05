@@ -7,7 +7,12 @@ final class InviteTest extends TestCase
 {
     public function testFetchAllUsers()
     {
-        // $users = $api->users->all()->get();
+        $api = new Api('gUJXyjYMUaB8R52EtbJlCXve02mlruI1SozaOqvTXfjmA5Vr3379KlhkPX94xkmW');
+        $invite = $api->invites->create([
+            'name' => 'James McTavish',
+            'email' => 'dan@danmatthews.me',
+        ]);
+        dump($invite);
         // dump($users);
     }
 

@@ -29,7 +29,7 @@ class Invite extends BaseRequest
         $this->setEndpoint('invite/');
         $this->setMethod(parent::METHOD_POST);
         $this->setBody($body);
-        return $this;
+        return $this->makeRequest();
     }
 }
 
