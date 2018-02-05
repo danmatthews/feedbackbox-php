@@ -94,7 +94,9 @@ class BaseRequest
     public function makeRequest()
     {
         $url = $this->url . $this->endpoint;
-        $client = new Client();
+        $client = new Client([
+            'base_uri' => $this->url,
+        ]);
         $rdata = array(
             'headers' => array('X-FeedbackBox-Auth' => $this->apiKey),
         );
@@ -107,17 +109,9 @@ class BaseRequest
         if (!empty($this->body)) {
             $rdata['body'] = $this->body;
         }
-        switch ($this->method) {
-            case self::METHOD_PATCH:
-                $response = \GuzzleHttp\get($url, $rdata);
-                break;
-            case self::METHOD_POST:
-                $response = \GuzzleHttp\post($url, $rdata);
-                break;
-            default:
-                $response = \GuzzleHttp\get($url, $rdata);
-        }
-        return $response->json();
+        $response = $client->request($this->method, $this->endpoint, $rdata);
+        
+        return json_decode($response->getBody());
     }
 
     /**

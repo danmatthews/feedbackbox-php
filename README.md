@@ -1,6 +1,10 @@
 # FeedbackBox PHP API Wrapper
 This library is a work in progress, pull requests are accepted with thanks.
 
+## To run tests:
+
+Create a file called key.txt in the `tests` directory. This will be used to inject your API key, but should not be committed to the library.
+
 ## Install
 Install with [Composer](http://getcomposer.org).
 
